@@ -4,10 +4,10 @@
 nombre_empresa = "Tecnologia Springfield"
 iva = 0.15
 
+print(nombre_empresa)
 print("=================================")
 print("Sistema de facturacion")
 print("=================================")
-print(nombre_empresa)
 print(f"IVA configurado: {iva * 100}%")
 print("=================================")
 
@@ -84,3 +84,15 @@ else:
 print("\n--- DETALLE DE LA FACTURA ---")
 for item in factura_items:
     print(f"- {item['cantidad']}x {item['nombre']} (${item['precio']:.2f} c/u) = ${item['subtotal']:.2f}")
+
+# ---------------------------------------------------------
+# TAREA 4: Agregar productos
+# ---------------------------------------------------------
+print("\n--- INVENTARIO ---")
+
+for producto in productos:
+    print(f"ID: {producto['id']}")
+    print(f"Nombre: {producto['nombre']}")
+    print(f"Precio: ${producto['precio']:.2f}")
+    print(f"Stock: {producto['stock']}")
+    print("-------------------")
